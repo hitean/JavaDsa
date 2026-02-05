@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class pattern {
     public static void main(String[] args) {
         // soild rectangle
@@ -95,15 +97,96 @@ public class pattern {
 //12
 //1
 
+//
+//        int n = 10;
+//
+//        for (int i = n; i >= 1; i--) {
+//            for (int j = 1; j <= i; j++) {
+//                System.out.print(j);
+//            }
+//            System.out.println();
+//        }
 
-        int n = 10;
+// Row 1: 1
+// Row 2: 2 3
+// Row 3: 4 5 6
+// Row 4: 7 8 9 10
+// Row 5: 11 12 13 14 15
 
-        for (int i = n; i >= 1; i--) {
+//        int n=5,number=1;
+//
+//        for(int i =1;i<=n;i++){
+//            for(int j =1;j<=i;j++){
+//                System.out.print(number);
+//                number++;
+//            }
+//            System.out.println(" ");
+//        }
+
+
+// Row 1: 1
+// Row 2: 0 1
+// Row 3: 1 0 1
+// Row 4: 0 1 0 1
+// Row 5: 1 0 1 0 1
+
+//        int n=5;
+//
+//        for (int i=1;i<=n;i++){
+//            for (int j=1;j<=i;j++) {
+//                System.out.print(( (i + j) % 2 == 0 ) ? 1 : 0);
+//            }
+//            System.out.println("");
+//        }
+//
+
+
+//Advance Patterns
+// *      * 1s 6sp 1s
+// **    ** 2s 4sp 2s
+// ***  *** 3s 2sp 3s
+// ******** 4s 0sp 4s
+// ******** 4s 0sp 4s
+// ***  *** 3s 2sp 3s
+// **    ** 2s 4sp 2s
+// *      * 1s 6sp 1s
+
+        int n = 4;
+
+        for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
-                System.out.print(j);
+                System.out.print("*");
+            }
+            int space = 2 * (n - i);
+            for (int j = 1; j <= space; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
             }
             System.out.println();
         }
+
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            int space = 2 * (n - i);
+            for (int j = 1; j <= space; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+
+
+
+
+
 
 
 

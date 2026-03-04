@@ -1,6 +1,6 @@
 package arrays;
 import java.util.Scanner;
-
+//binary search
 public class arrays8 {
 
     public static int binarySearch(int arr[], int key) {

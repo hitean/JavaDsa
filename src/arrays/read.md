@@ -55,6 +55,10 @@
 29. Two Sum problem.
 30. Check if two arrays are equal.
 
+
+Find the largest element in a 2D array.
+5️⃣ Count even and odd numbers in a matrix.
+6️⃣ Print the transpose of a matrix
 ---
 
 
